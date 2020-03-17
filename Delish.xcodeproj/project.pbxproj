@@ -13,6 +13,7 @@
 		03BEDC7B24215FD000DED3D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BEDC7924215FD000DED3D9 /* Main.storyboard */; };
 		03BEDC7D24215FD200DED3D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03BEDC7C24215FD200DED3D9 /* Assets.xcassets */; };
 		03BEDC8024215FD200DED3D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BEDC7E24215FD200DED3D9 /* LaunchScreen.storyboard */; };
+		03BEDC8D242160C800DED3D9 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BEDC8C242160C800DED3D9 /* Recipe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		03BEDC7C24215FD200DED3D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03BEDC7F24215FD200DED3D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03BEDC8124215FD200DED3D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03BEDC8C242160C800DED3D9 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		03BEDC7224215FD000DED3D9 /* Delish */ = {
 			isa = PBXGroup;
 			children = (
+				03BEDC8A2421602800DED3D9 /* Model */,
+				03BEDC892421601F00DED3D9 /* View */,
+				03BEDC882421601400DED3D9 /* Controller */,
+				03BEDC8B2421604B00DED3D9 /* Supporting files */,
+			);
+			path = Delish;
+			sourceTree = "<group>";
+		};
+		03BEDC882421601400DED3D9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				03BEDC7724215FD000DED3D9 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		03BEDC892421601F00DED3D9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				03BEDC7924215FD000DED3D9 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		03BEDC8A2421602800DED3D9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				03BEDC8C242160C800DED3D9 /* Recipe.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		03BEDC8B2421604B00DED3D9 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
 				03BEDC7324215FD000DED3D9 /* AppDelegate.swift */,
 				03BEDC7524215FD000DED3D9 /* SceneDelegate.swift */,
-				03BEDC7724215FD000DED3D9 /* ViewController.swift */,
-				03BEDC7924215FD000DED3D9 /* Main.storyboard */,
 				03BEDC7C24215FD200DED3D9 /* Assets.xcassets */,
 				03BEDC7E24215FD200DED3D9 /* LaunchScreen.storyboard */,
 				03BEDC8124215FD200DED3D9 /* Info.plist */,
 			);
-			path = Delish;
+			name = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +176,7 @@
 				03BEDC7824215FD000DED3D9 /* ViewController.swift in Sources */,
 				03BEDC7424215FD000DED3D9 /* AppDelegate.swift in Sources */,
 				03BEDC7624215FD000DED3D9 /* SceneDelegate.swift in Sources */,
+				03BEDC8D242160C800DED3D9 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,8 +321,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_TEAM = 3QN7DG53LR;
 				INFOPLIST_FILE = Delish/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,8 +341,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_TEAM = 3QN7DG53LR;
 				INFOPLIST_FILE = Delish/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
